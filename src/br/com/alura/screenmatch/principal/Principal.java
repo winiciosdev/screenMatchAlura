@@ -1,3 +1,5 @@
+package br.com.alura.screenmatch.principal;
+
 import br.com.alura.screenmatch.calculos.CalculadoraDeTempo;
 import br.com.alura.screenmatch.calculos.FiltroRecomendacao;
 import br.com.alura.screenmatch.modelos.Episodio;
@@ -19,6 +21,7 @@ public class Principal {
         System.out.println("Total de avaliações: " + theBatman.getTotalDeAvaliacoes());
         System.out.println(theBatman.pegaMedia());
 
+        System.out.println("museu");
 
         Serie smallVile = new Serie("Smallvile", 2001);
         smallVile.exibeFichaTecnica();
@@ -45,12 +48,12 @@ public class Principal {
         episodio.setTotalVisualizacoes(300);
         filtro.filtra(episodio);
 
-        var filmeDoPaulo = new Filme("Dogville", 2003);
-        filmeDoPaulo.setDuracaoEmMinutos(200);
-        filmeDoPaulo.avalia(10);
+        var filmeDoLucas = new Filme("Bad boys", 1995);
+        filmeDoLucas.setDuracaoEmMinutos(200);
+        filmeDoLucas.avalia(10);
 
         ArrayList<Filme> listaDeFilmes = new ArrayList<>();
-        listaDeFilmes.add(filmeDoPaulo);
+        listaDeFilmes.add(filmeDoLucas);
         listaDeFilmes.add(theBatman);
         listaDeFilmes.add(filmeFav);
         System.out.println("Tamanho da lista " + listaDeFilmes.size());
