@@ -19,7 +19,7 @@ public class PrincipalComBusca {
         System.out.println("Digite o nome do filme que voce deseja pesquisar");
         var busca = user.nextLine();
 
-        String enderecoFilme = "https://www.omdbapi.com/?t=" + busca + "&apikey=a9bd2ae";
+        String enderecoFilme = "https://www.omdbapi.com/?t=" + busca.replace(" ", "+") + "&apikey=a9bd2ae";
         try {
             HttpClient client = HttpClient.newHttpClient();
             HttpRequest request = HttpRequest.newBuilder()
@@ -44,6 +44,8 @@ public class PrincipalComBusca {
             System.out.println(e.getMessage());
         } catch (IllegalArgumentException e){
             System.out.println("Algum erro na busca, verifique se o nome foi colocado corretamente.");
+        } catch ( Exception e){
+            System.out.println("Aconteceu algo de errado");
         }
 
         System.out.println("O programa finalizou corretamente.");
