@@ -24,6 +24,3 @@ Este projeto, desenvolvido como parte da trilha da Alura, é uma aplicação Jav
 
 Sinta-se à vontade para contribuir com melhorias e novas funcionalidades.
 
----
-
-Esse modelo oferece uma visão clara do projeto e suas funcionalidades.
